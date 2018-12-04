@@ -3,7 +3,7 @@ import RestClient from './restClient';
 
 export default class WebStoreClient extends RestClient {
 	constructor(options) {
-		super({ baseUrl: options.baseUrl, token: options.token });
+		super({ baseUrl: 'https://api.cezerin.com/v1', token: options.token });
 	}
 
 	static authorize = (email, adminUrl) => {
@@ -15,7 +15,7 @@ export default class WebStoreClient extends RestClient {
 			body: JSON.stringify({ email, admin_url: adminUrl })
 		};
 
-		return fetch(`${this.baseUrl}/account/authorize`, config).then(
+		return fetch('https://api.cezerin.com/v1/account/authorize', config).then(
 			RestClient.returnStatusAndJson
 		);
 	};
