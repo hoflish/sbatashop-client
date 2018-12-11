@@ -1,7 +1,7 @@
 {
-  "name": "sbatashop-client",
+  "name": "@sbatashop/client",
   "version": "0.1.1",
-  "description": "API client library for eCommerce PWA. Work on browser and server.",
+  "description": "API client library for SbataShop eCommerce platform. Work on browser and server.",
   "keywords": [],
   "license": "MIT",
   "author": {
